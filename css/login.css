@@ -31,12 +31,13 @@ body{
 
 .card-container{
     width: 450px;
-    height: 550px;
+    height: 560px;
     background-color: whitesmoke;
     border-radius: 15px;
     display: grid;
     grid-template-rows: 1.5rem 1fr 2fr 1fr 4fr 1fr 1.5rem;
     grid-template-columns: 1.5rem 1fr 1.5rem;
+    border: 1px solid hsl(169, 82%, 27%) ;    
 }
 
 .title-container{
@@ -73,6 +74,13 @@ body{
     flex-direction: column;
     justify-content: space-around;
 }
+
+.error-message {
+    font-size: 1.4rem;    
+    text-align: center;
+    color: red;
+    font-weight: 500;
+}
 .label-container .input-login{
     outline: none;
     border: 1px solid hsl(186, 15%, 59%);    
@@ -102,7 +110,7 @@ body{
     border: 1px solid hsl(169, 82%, 27%);
     border-radius: 5px;
     color: white;
-    padding: 1.6rem;
+    padding: 1.4rem;
     font-size: 2rem;  
     font-weight: 600;  
 }

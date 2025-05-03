@@ -17,35 +17,49 @@
         </figure>
         <section class="container-message">
           <p>
-            Para acceder al servicio de paqueteria Master locker, es necesario crear una cuenta nueva si ya esta registrado, por favor colocar su email y contraseña correspondiente.
+            Para acceder al servicio de paqueteria Master locker, es necesario
+            crear una cuenta nueva si ya esta registrado, por favor colocar su
+            email y contraseña correspondiente.
           </p>
         </section>
         <form action="" class="form-container">
+          <div class="error-message" role="alert" aria-live="assertive"></div>
           <label for="username" class="label-container">
             <span>Usuario</span>
-            <input type="text" 
-                name="" 
-                id="username"
-                class="input-login"
-                placeholder="Ingrese su usuario"
-                />
+            <input
+              type="text"
+              name=""
+              id="username"
+              class="input-login"
+              placeholder="Ingrese su usuario"
+              required
+            />
           </label>
           <label for="user-password" class="label-container">
             <span>Contraseña</span>
-            <input type="password" 
-                id="user-password"
-                class="input-login"
-                placeholder="Ingrese su contraseña"
-                />
+            <input
+              type="password"
+              id="user-password"
+              class="input-login"
+              placeholder="Ingrese su contraseña"
+              required
+            />
           </label>
-          <input type="submit" class="button" value="Ingresar" />
+          <input
+            type="submit"
+            id="button-login"
+            value="Ingresar"
+            id="btn-send-login"
+            class="button"
+          />
         </form>
         <section class="links-register">
-          <a href="">Registrarse</a>
-          <a href="">Olvidó su contraseña</a>
+          <a href="./register.html">Registrarse</a>
+          <a href="./recovery_password.html">Olvidó su contraseña</a>
         </section>
       </section>
     </main>
     <footer>Footer ejemplo</footer>
+    <script src="./js/login.js"></script>
   </body>
 </html>
