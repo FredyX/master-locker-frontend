@@ -16,65 +16,70 @@
           <section class="personal-info-container">
             <label for="input-name">
               <span>Nombre</span>
-              <input type="text" class="input" id="input-name" />
+              <input type="text" class="input" id="input-name" required/>
             </label>
-            <label for="">
+            <label for="input-lastname">
               <span>Apellido</span>
-              <input type="text" class="input" />
+              <input type="text" class="input" id="input-lastname" required/>
             </label>
-            <label for="">
+            <label for="input-dni">
               <span>Dni</span>
-              <input type="text" class="input"/>
+              <input type="text" class="input" id="input-dni" required/>
             </label>
-            <label for="">
+            <label for="input-phone">
               <span>Telefono</span>
-              <input type="text" class="input" />
+              <input type="text" class="input" id="input-phone" required/>
             </label>
           </section>
           <section class="address-container">
-            <label 
-                for="country-container" 
-                class="expand-input" 
-                id="country-container"                
-                >
+            <label
+              for="input-country"
+              class="expand-input"
+              id="country-container"
+            >
               <span>País</span>
-              <input type="text" class="input" />
+              <input type="text" class="input" id="input-country" required/>
             </label>
-            <label for="">
+            <label for="input-department">
               <span>Departamento</span>
-              <input type="text" class="input" />
+              <input type="text" class="input" id="input-department" required/>
             </label>
-            <label for="">
+            <label for="input-municipio">
               <span>Municipio</span>
-              <input type="text" class="input" />
+              <input type="text" class="input" id="input-municipio" required/>
             </label>
-            <label for="" class="expand-input">
+            <label for="input-address" class="expand-input">
               <span>Dirección</span>
-              <textarea type="texttarea" class="input">
-               </textarea> 
+              <textarea type="texttarea" class="input" id="input-address" required> </textarea>
             </label>
           </section>
           <section class="credential-container">
-            <label for="" class="expand-input">
+            <label for="input-email" class="expand-input">
               <span>Email</span>
-              <input type="email" class="input" />
+              <input type="email" class="input" id="input-email" required/>
             </label>
-            <div class="error-password"></div>
+            <div class="error-message"></div>
             <label for="" id="password-container-1">
               <span>Contraseña</span>
-              <input type="password" class="input" />
+              <input type="password" class="input" id="input-password-1" required/>
             </label>
-            <div class="error-password"></div>
-            <label for="pass-2" id="password-container-2">
+            <div class="error-message"></div>
+            <label for="input-password-2" id="password-container-2">
               <span>Contraseña</span>
-              <input type="password" class="input" id="pass-2" />
+              <input type="password" class="input" id="input-password-2" required/>
             </label>
           </section>
           <section class="button-container">
-            <input type="button" value="Crear Cuenta" class="expand-input button" />
+            <input
+              type="submit"
+              value="Crear Cuenta"
+              class="expand-input button"
+              required
+            />
           </section>
         </form>
       </section>
     </main>
+    <script src="./js/register.js"></script>
   </body>
 </html>
