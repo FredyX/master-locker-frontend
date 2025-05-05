@@ -1,0 +1,126 @@
+*{
+    padding: 0;    
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: hsl(148, 38%, 91%);
+    /*background-color: rgb(238, 28, 40);*/
+    font-family: "Figtree", sans-serif;
+    font-optical-sizing: auto;
+    display: grid;
+}
+
+.main-container{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-content: center;
+}
+
+.main-card{
+    background-color: white;
+    border-radius: 1rem;
+    padding: 2.5rem;
+    height: 63rem;
+    width: 50rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+.form-container{
+    display: grid;
+    grid-template-rows: repeat(4, 1fr); 
+    height: 90%;
+    width: 45rem;
+    margin-top: 15px;
+}
+
+.form-container section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;  
+    column-gap: 1.5rem;    
+    row-gap: 1rem;
+    margin-top: 5px;
+}
+
+.form-container label{
+    display: flex;
+    flex-direction: column;           
+    
+    color: hsl(187, 24%, 22%);
+    font-size: 1.2rem;
+    font-weight: 600; 
+}
+
+.form-container label span{
+    margin-bottom: -7px;
+}
+.form-container .address-container {
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.expand-input{
+    grid-column: 1 / 3;    
+}
+
+#password-container-1{
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+#password-container-2{
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+}
+
+.input{
+    outline: none;
+    border: 1px solid hsl(186, 15%, 59%);    
+    border-radius: 5px;
+    padding: 1rem;
+    margin-top: 10px; 
+    caret-color: hsl(185, 17%, 56%);   
+    color: hsl(169, 82%, 27%);
+    font-size: 1.4rem;
+    font-weight: 100;      
+}
+
+.input:focus{
+    box-shadow: 0 0  5px 1px hsl(169, 82%, 27%) ;
+}
+
+.button{
+    background-color: hsl(169, 82%, 27%);
+    outline: none;
+    border: 1px solid hsl(169, 82%, 27%);
+    border-radius: 5px;
+    color: white;
+    padding: 1rem;
+    font-size: 1.6rem;  
+    font-weight: 600;  
+}
+.button:hover{
+    background-color: #063f36 ;
+    cursor: pointer;
+}
+
+.form-container .button-container{
+    grid-template-rows: 1fr;    
+}
+textarea{
+   resize: none; 
+   text-align: start;
+}
+.title{
+    font-size: 1.5rem;
+    color: #063f36;
+}

@@ -1,13 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/register.css" />
     <title>Registro</title>
-</head>
-<body>
+  </head>
+  <body>
     <main class="main-container">
-        <h1>Registro a Master Locker</h1>
+      <section class="main-card">
+        <section class="title">
+          <h3>Registro</h3>
+        </section>
+        <form action="" class="form-container">
+          <section class="personal-info-container">
+            <label for="input-name">
+              <span>Nombre</span>
+              <input type="text" class="input" id="input-name" />
+            </label>
+            <label for="">
+              <span>Apellido</span>
+              <input type="text" class="input" />
+            </label>
+            <label for="">
+              <span>Dni</span>
+              <input type="text" class="input"/>
+            </label>
+            <label for="">
+              <span>Telefono</span>
+              <input type="text" class="input" />
+            </label>
+          </section>
+          <section class="address-container">
+            <label 
+                for="country-container" 
+                class="expand-input" 
+                id="country-container"                
+                >
+              <span>País</span>
+              <input type="text" class="input" />
+            </label>
+            <label for="">
+              <span>Departamento</span>
+              <input type="text" class="input" />
+            </label>
+            <label for="">
+              <span>Municipio</span>
+              <input type="text" class="input" />
+            </label>
+            <label for="" class="expand-input">
+              <span>Dirección</span>
+              <textarea type="texttarea" class="input">
+               </textarea> 
+            </label>
+          </section>
+          <section class="credential-container">
+            <label for="" class="expand-input">
+              <span>Email</span>
+              <input type="email" class="input" />
+            </label>
+            <div class="error-password"></div>
+            <label for="" id="password-container-1">
+              <span>Contraseña</span>
+              <input type="password" class="input" />
+            </label>
+            <div class="error-password"></div>
+            <label for="pass-2" id="password-container-2">
+              <span>Contraseña</span>
+              <input type="password" class="input" id="pass-2" />
+            </label>
+          </section>
+          <section class="button-container">
+            <input type="button" value="Crear Cuenta" class="expand-input button" />
+          </section>
+        </form>
+      </section>
     </main>
-</body>
+  </body>
 </html>
